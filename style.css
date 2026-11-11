@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.logo span, .hero span {
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.hero {
+    min-height: 570px;
+    padding: 130px 8%;
+    background: #0f172a;
+    color: white;
+}
+
+.welcome {
+    color: #60a5fa;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #93c5fd;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+section:not(.hero) {
+    padding: 75px 8%;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+#about p {
+    max-width: 750px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills span {
+    background: white;
+    padding: 12px 22px;
+    border: 1px solid #dbeafe;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.project {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.project h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #2563eb;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #0f172a;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 90px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
